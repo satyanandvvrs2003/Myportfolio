@@ -276,3 +276,37 @@ footer a:hover {
     margin-top: 20px;
   }
 }
+/* Ye ensure karta hai ki sab section mobile screen ke andar hi rahe */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Yeh sabhi container ke liye common padding and width fix karta hai */
+.container {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* About section me bhi responsive padding set karo */
+.about-section {
+  padding: 16px;
+  word-wrap: break-word;
+}
+
+/* Body me bhi overflow disable karo */
+body {
+  overflow-x: hidden;
+}
+@media screen and (max-width: 600px) {
+  .container,
+  .about-section {
+    padding: 16px;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+}
