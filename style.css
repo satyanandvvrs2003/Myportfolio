@@ -1,4 +1,3 @@
-/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +9,6 @@ body {
   color: #333;
   scroll-behavior: smooth;
 }
-
-/* Hero Section */
 header.hero {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   padding: 60px 20px;
@@ -47,7 +44,7 @@ header.hero {
 }
 .buttons {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping on small screen */
+  flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
   margin-top: 20px;
@@ -79,7 +76,6 @@ header.hero {
   background-color: #007bff;
   color: white;
 }
-/* Name Animation */
 .name-animation {
   text-align: center;
   margin-top: 30px;
@@ -99,7 +95,6 @@ header.hero {
   transform: translateX(100px) scale(0.8);
   animation: slideIn 0.8s ease-out forwards;
 }
-/* Animation Delays */
 .line-1 span:nth-child(1) { animation-delay: 0.1s; }
 .line-1 span:nth-child(2) { animation-delay: 0.2s; }
 .line-1 span:nth-child(3) { animation-delay: 0.3s; }
@@ -114,7 +109,6 @@ header.hero {
 .line-2 span:nth-child(3) { animation-delay: 1.3s; }
 .line-2 span:nth-child(4) { animation-delay: 1.4s; }
 .line-2 span:nth-child(5) { animation-delay: 1.5s; }
-/* Keyframes */
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -132,8 +126,6 @@ header.hero {
     transform: translateX(0) scale(1);
   }
 }
-
-/* Sections */
 .section {
   padding: 60px 20px;
   max-width: 1000px;
@@ -158,6 +150,15 @@ blockquote {
 
 /* Skills */
 .tags span {
+  display: inline-block;
+  background: #1e88e5;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+.vision span {
   display: inline-block;
   background: #1e88e5;
   color: white;
